@@ -1,11 +1,11 @@
 <script lang="ts">
-	import Counter from './lib/Counter.svelte'
+	import Listener from './lib/Listener.svelte'
+	import Poster from './lib/Poster.svelte'
 </script>
 
 <main>
-	<h1>Vite + Svelte</h1>
+	<h1>MQTT Test</h1>
 
-	<div class="card">
-		<Counter />
-	</div>
+	<Listener />
+	<Poster />
 </main>
