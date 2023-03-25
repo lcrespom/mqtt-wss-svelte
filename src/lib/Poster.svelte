@@ -5,4 +5,4 @@
 	export let topic: string
 </script>
 
-<div style="margin-top: 2em">ToDo: Poster</div>
+<div>ToDo: Poster</div>

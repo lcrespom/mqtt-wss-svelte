@@ -19,5 +19,6 @@
 	<h1>MQTT Test</h1>
 
 	<Listener {client} {topic} />
+	<hr style="margin: 2em 1ex" />
 	<Poster {client} {topic} />
 </main>

@@ -5,6 +5,8 @@
 	export let client: MqttClient
 	export let topic: string
 
+	let messages = ''
+
 	function listen() {
 		client.on('connect', () => {
 			console.log('Connected')
@@ -14,10 +16,14 @@
 		})
 		client.on('message', (topic, payload) => {
 			console.log('Received Message:', topic, payload.toString())
+			let tstamp = new Date().toLocaleString().split(' ')[1]
+			messages += tstamp + ' - ' + payload + '\n'
 		})
 	}
 
 	onMount(listen)
 </script>
 
-<div>ToDo: listener</div>
+<pre>
+{messages}
+</pre>
