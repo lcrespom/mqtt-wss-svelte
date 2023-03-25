@@ -1,10 +1,10 @@
 <script lang="ts">
-	import * as mqtt from 'mqtt'
+	import * as mqtt from 'mqtt/dist/mqtt.min'
 
 	import Listener from './lib/Listener.svelte'
 	import Poster from './lib/Poster.svelte'
 
-	const connectUrl = `mqtt://test.mosquitto.org`
+	const connectUrl = `wss://test.mosquitto.org:8081`
 	const topic = '/luis/test'
 
 	function connect() {
