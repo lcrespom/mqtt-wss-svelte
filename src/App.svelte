@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Import this as a workaround for a Vite/MQTT incompatibility. See https://github.com/mqttjs/MQTT.js/issues/1269
 	import * as mqtt from 'mqtt/dist/mqtt.min'
 
 	import Listener from './lib/Listener.svelte'
